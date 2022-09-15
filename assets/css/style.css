@@ -1,0 +1,257 @@
+:root {
+  --bca-blue: #0927d6;
+  --bca-blue-50: rgba(9, 39, 214, 0.5);
+}
+
+/* all */
+
+/* buttons */
+.btn.btn-outline-bca {
+  --bs-btn-color: #0927d6;
+  --bs-btn-border-color: #0927d6;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0927d6;
+  --bs-btn-hover-border-color: #0927d6;
+  --bs-btn-focus-shadow-rgb: 94, 114, 228;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0927d6;
+  --bs-btn-active-border-color: #0927d6;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: #0927d6;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+.btn.btn-bca{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0927d6;
+    --bs-btn-border-color: #0927d6;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0927d6;
+    --bs-btn-hover-border-color: #0927d6;
+    --bs-btn-focus-shadow-rgb: 217, 217, 217;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0927d6;
+    --bs-btn-active-border-color: #0927d6;
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0927d6;
+    --bs-btn-disabled-border-color: #0927d6;
+}
+.btn-link {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #0927d6;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #233dd2;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-border-color: transparent;
+    --bs-btn-box-shadow: none;
+}
+
+.btn-link,
+.btn-link:focus,
+.btn-link:hover {
+    text-decoration: none;
+}
+
+.btn.btn-link {
+    font-weight: 700;
+}
+
+.btn.btn-link,
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+    box-shadow: none;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  /* CSS */
+  .home-title {
+    font-size: 5rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 2rem !important;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+  .home-title {
+    font-size: 5rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 2rem !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .home-title {
+    font-size: 2.5rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 1rem !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+  .home-title {
+    font-size: 3rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home-title {
+    font-size: 1.5rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 0.5rem !important;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .home-title {
+    font-size: 2rem !important;
+  }
+  /* CSS */
+  .home-sub-title {
+    font-size: 1rem !important;
+  }
+}
+.nav-logo {
+  height: 60px;
+  width: 60px;
+}
+.bca-background {
+  background-image: url(/assets/img/bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bca-background .bca-background-overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bca-blue-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-transparent {
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.navbar-white {
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.bg-contents {
+  background-color: #ebecf0;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.navbar-white .nav-line .nav-item .nav-link {
+  color: #000;
+}
+.navbar-transparent .nav-line .nav-item .nav-link {
+  color: #fff;
+}
+.navbar-white .nav-line .nav-item .nav-link,
+.navbar-transparent .nav-line .nav-item .nav-link {
+  position: relative !important;
+  transition: all 1.5s;
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -ms-transition: all 1.5s;
+  -o-transition: all 1.5s;
+}
+
+.navbar-transparent .nav-line .nav-item .nav-link::after {
+  background: #fff;
+}
+.navbar-white .nav-line .nav-item .nav-link::after {
+  background: #000;
+}
+.navbar-white .nav-line .nav-item .nav-link::after,
+.navbar-transparent .nav-line .nav-item .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  height: 2px;
+}
+.navbar-white .nav-line .nav-item .nav-link:hover::after,
+.navbar-transparent .nav-line .nav-item .nav-link:hover::after,
+.navbar-white .nav-line .nav-item .nav-link.active::after,
+.navbar-transparent .nav-line .nav-item .nav-link.active::after {
+  width: 100%;
+}
+/* news  */
+.news-container {
+  height: 70vh;
+}
+.card-img-full {
+  height: 100%;
+  object-fit: cover;
+}
